@@ -18,8 +18,8 @@ int main() {
     }
 
     mergeSort.printArray(array, size);
-
-
+    mergeSort.sort(array, size);
+    mergeSort.printArray(array, size);
 
     delete[] array;
 
