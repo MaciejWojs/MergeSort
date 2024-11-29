@@ -7,7 +7,7 @@ int main() {
     int size;
     std::cout << "Podaj rozmiar tablicy: ";
     std::cin >> size;
-    // MergeSort mergeSort;
+    MergeSort mergeSort;
 
     std::cout << "Creating " << size << " elements array\n";
 
