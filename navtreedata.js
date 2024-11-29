@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "___", "index.html", [
+  [ "MaciejWojs/MergeSort", "index.html", [
     [ "Przestrzenie nazw", "namespaces.html", [
       [ "Lista przestrzeni nazw", "namespaces.html", "namespaces_dup" ],
       [ "Składowe przestrzeni nazw", "namespacemembers.html", [
