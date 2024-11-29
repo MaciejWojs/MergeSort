@@ -97,8 +97,8 @@ jobs:
 
       - name: Set Doxygen project version
         run: |
-          echo PROJECT_NAME = "${{ env.REPO }}" >> Doxyfile
-          echo PROJECT_BRIEF = "Implementacja ${{ env.REPO }}" >> Doxyfile
+          echo PROJECT_NAME = "${{ env.REPO_NAME }}" >> Doxyfile
+          echo PROJECT_BRIEF = "Implementacja ${{ env.REPO_NAME }}" >> Doxyfile
       
       - name: Set Doxygen project name and description
         run: |

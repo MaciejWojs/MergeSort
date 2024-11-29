@@ -9,6 +9,7 @@ on:
 env:
     FILE_NAME: Latex-Documentation
     REPO: ${{ secrets.OWNER }}/${{ secrets.REPO }}
+    REPO_NAME: ${{ github.event.repository.name }}
     PACKAGES: graphviz ghostscript inkscape python3
     IS_TAG: ${{ startsWith(github.ref, 'refs/tags/') }}
     OTHER_REPO_PATH: ./docs
