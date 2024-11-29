@@ -71,7 +71,7 @@ void MergeSort::sort(int* array, int size) {
     // std::cout << "Right arr: ";
     // printArray(right, size - half_size);
 
-    // delete[] left;
-    // delete[] right;
+    delete[] left;
+    delete[] right;
     // sort()
 }
