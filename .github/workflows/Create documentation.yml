@@ -15,7 +15,7 @@ env:
   HTML_DIR: ./docs/html
   PYTHON_VERSION: 3.13
   UML_FILE: uml.puml
-  HEADER_FILE: ___HEADER_FILE___
+  HEADER_FILE: MergeSort.hpp
 
 jobs:
   Create_documentation:
