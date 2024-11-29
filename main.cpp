@@ -17,10 +17,7 @@ int main() {
         array[i] = rand() % size;
     }
 
-    for (int i = 0; i < size; i++) {
-        std::cout << array[i] << " ";
-    }
-    std::cout << std::endl;
+    mergeSort.printArray(array, size);
 
 
 
