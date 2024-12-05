@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_0',['Example',['../classMyLibrary_1_1Example.html',1,'MyLibrary']]]
+  ['mergesort_0',['MergeSort',['../classMergeSort.html',1,'']]]
 ];

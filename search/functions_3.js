@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['printarray_0',['printArray',['../classMergeSort.html#a13c195a9803b6d7dc083306c00a2a12b',1,'MergeSort::printArray()'],['../test_8cpp.html#a9a1399840939b3471ff38f1ca1d983c4',1,'printArray():&#160;test.cpp']]]
+  ['sort_0',['sort',['../classMergeSort.html#abaa0cec9b71bb0502069ad9151400f60',1,'MergeSort']]],
+  ['sortarray_1',['sortArray',['../test_8cpp.html#ad3a70ae54ffce2332fd51aaa31d3032f',1,'test.cpp']]]
 ];

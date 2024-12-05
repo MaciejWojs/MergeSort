@@ -24,17 +24,9 @@
 */
 var menudata={children:[
 {text:"Strona główna",url:"index.html"},
-{text:"Powiązane strony",url:"pages.html"},
-{text:"Przestrzenie nazw",url:"namespaces.html",children:[
-{text:"Lista przestrzeni nazw",url:"namespaces.html"},
-{text:"Składowe przestrzeni nazw",url:"namespacemembers.html",children:[
-{text:"Wszystko",url:"namespacemembers.html"},
-{text:"Wyliczenia",url:"namespacemembers_enum.html"},
-{text:"Wartości wyliczeń",url:"namespacemembers_eval.html"}]}]},
 {text:"Klasy",url:"annotated.html",children:[
 {text:"Lista klas",url:"annotated.html"},
 {text:"Indeks klas",url:"classes.html"},
-{text:"Hierarchia klas",url:"inherits.html"},
 {text:"Składowe klas",url:"functions.html",children:[
 {text:"Wszystko",url:"functions.html"},
 {text:"Funkcje",url:"functions_func.html"}]}]},
