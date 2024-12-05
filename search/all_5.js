@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['i_0',['i',['../namespaceconvert.html#af77890feb4f3c9767c6cfe5d7cfe3bab',1,'convert']]],
-  ['input_5ffile_1',['input_file',['../namespaceconvert.html#aee129773729cfb8f7faf5cdcf42b41ae',1,'convert']]],
-  ['inside_5fclass_2',['inside_class',['../namespaceconvert.html#abeb6a45138b40f5239926c0d475efd8d',1,'convert']]]
+  ['features_0',['Features',['../md_doxygen-awesome-css_2README.html#autotoc_md31',1,'']]],
+  ['findbiggest_1',['findBiggest',['../classMergeSort.html#a9c94bacf0c4d75508062190a2244d331',1,'MergeSort']]],
+  ['foo_2',['foo',['../classMyLibrary_1_1SecondExample.html#a3f8843d27356e7416236a8c2a0c762ed',1,'MyLibrary::SecondExample']]],
+  ['formatting_20tables_3',['Formatting Tables',['../md_doxygen-awesome-css_2docs_2tricks.html#tricks-tables',1,'']]],
+  ['fragment_20copy_20button_4',['Fragment Copy Button',['../md_doxygen-awesome-css_2docs_2extensions.html#extension-copy-button',1,'']]],
+  ['full_20width_5',['Full Width',['../md_doxygen-awesome-css_2docs_2tricks.html#autotoc_md21',1,'']]],
+  ['function_5ftemplate_5ftest_6',['function_template_test',['../classMyLibrary_1_1SubclassExample.html#ad2432fe3b060789f6f7052c515d515f4',1,'MyLibrary::SubclassExample']]],
+  ['further_20installation_20instructions_7',['Further installation instructions',['../md_doxygen-awesome-css_2README.html#autotoc_md38',1,'']]]
 ];

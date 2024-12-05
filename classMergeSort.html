@@ -107,24 +107,32 @@ $(function(){initNavTree('classMergeSort.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Klasa implementująca algorytm sortowania przez scalanie.  
+ <a href="#details">Więcej...</a></p>
+
 <p><code>#include &lt;<a class="el" href="MergeSort_8hpp_source.html">MergeSort.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:abaa0cec9b71bb0502069ad9151400f60" id="r_abaa0cec9b71bb0502069ad9151400f60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaa0cec9b71bb0502069ad9151400f60">sort</a> (int *array, int size)</td></tr>
+<tr class="memdesc:abaa0cec9b71bb0502069ad9151400f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sortuje tablicę za pomocą algorytmu sortowania przez scalanie.  <br /></td></tr>
 <tr class="separator:abaa0cec9b71bb0502069ad9151400f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13c195a9803b6d7dc083306c00a2a12b" id="r_a13c195a9803b6d7dc083306c00a2a12b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13c195a9803b6d7dc083306c00a2a12b">printArray</a> (int *array, int size)</td></tr>
+<tr class="memdesc:a13c195a9803b6d7dc083306c00a2a12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje elementy tablicy.  <br /></td></tr>
 <tr class="separator:a13c195a9803b6d7dc083306c00a2a12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Metody prywatne</h2></td></tr>
-<tr class="memitem:a648797afec4e5887142eac5ec9dbd4cd" id="r_a648797afec4e5887142eac5ec9dbd4cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a648797afec4e5887142eac5ec9dbd4cd">merge</a> (int *array, int left, int middle, int right)</td></tr>
-<tr class="separator:a648797afec4e5887142eac5ec9dbd4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db52206954cc201adcc4c704eccf385" id="r_a7db52206954cc201adcc4c704eccf385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7db52206954cc201adcc4c704eccf385">merge</a> (int *array, int *left, int *right, int size)</td></tr>
+<tr class="memdesc:a7db52206954cc201adcc4c704eccf385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalanie dwóch podtablic w jedną posortowaną tablicę.  <br /></td></tr>
+<tr class="separator:a7db52206954cc201adcc4c704eccf385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c94bacf0c4d75508062190a2244d331" id="r_a9c94bacf0c4d75508062190a2244d331"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c94bacf0c4d75508062190a2244d331">findBiggest</a> (int *array, int size)</td></tr>
+<tr class="memdesc:a9c94bacf0c4d75508062190a2244d331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Znajduje największy element w tablicy.  <br /></td></tr>
 <tr class="separator:a9c94bacf0c4d75508062190a2244d331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><div class="plantumlgraph">
+<div class="textblock"><p>Klasa implementująca algorytm sortowania przez scalanie. </p>
+<div class="plantumlgraph">
 <img src="inline_umlgraph_1.png" />
 </div>
  </div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
@@ -155,10 +163,20 @@ Metody prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Znajduje największy element w tablicy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>Tablica do przeszukania. </td></tr>
+    <tr><td class="paramname">size</td><td>Rozmiar tablicy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Największy element w tablicy. </dd></dl>
+
 </div>
 </div>
-<a id="a648797afec4e5887142eac5ec9dbd4cd" name="a648797afec4e5887142eac5ec9dbd4cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a648797afec4e5887142eac5ec9dbd4cd">&#9670;&#160;</a></span>merge()</h2>
+<a id="a7db52206954cc201adcc4c704eccf385" name="a7db52206954cc201adcc4c704eccf385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db52206954cc201adcc4c704eccf385">&#9670;&#160;</a></span>merge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,17 +192,17 @@ Metody prywatne</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>middle</em></span>, </td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>right</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -193,6 +211,17 @@ Metody prywatne</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Scalanie dwóch podtablic w jedną posortowaną tablicę. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>Oryginalna tablica zawierająca podtablice. </td></tr>
+    <tr><td class="paramname">left</td><td>Lewa podtablica. </td></tr>
+    <tr><td class="paramname">right</td><td>Prawa podtablica. </td></tr>
+    <tr><td class="paramname">size</td><td>Rozmiar oryginalnej tablicy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -215,6 +244,15 @@ Metody prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Wypisuje elementy tablicy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>Tablica do wypisania. </td></tr>
+    <tr><td class="paramname">size</td><td>Rozmiar tablicy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="abaa0cec9b71bb0502069ad9151400f60" name="abaa0cec9b71bb0502069ad9151400f60"></a>
@@ -235,6 +273,15 @@ Metody prywatne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sortuje tablicę za pomocą algorytmu sortowania przez scalanie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>Tablica do posortowania. </td></tr>
+    <tr><td class="paramname">size</td><td>Rozmiar tablicy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

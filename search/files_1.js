@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mergesort_2ecpp_1',['MergeSort.cpp',['../MergeSort_8cpp.html',1,'']]],
-  ['mergesort_2ehpp_2',['MergeSort.hpp',['../MergeSort_8hpp.html',1,'']]]
+  ['example_2ehpp_0',['example.hpp',['../example_8hpp.html',1,'']]],
+  ['extensions_2emd_1',['extensions.md',['../extensions_8md.html',1,'']]]
 ];

@@ -1,7 +1,7 @@
 @startuml inline_umlgraph_1.png
 class MergeSort {
 -findBiggest(int* array, int size) : int
--merge(int* array, int left, int middle, int right) : void
+-merge(int* array, int* left, int* right, int size) : void
 +printArray(int* array, int size) : void
 +sort(int* array, int size) : void
 

@@ -25,17 +25,78 @@
 var NAVTREE =
 [
   [ "MergeSort", "index.html", [
+    [ "Customization", "md_doxygen-awesome-css_2docs_2customization.html", [
+      [ "CSS-Variables", "md_doxygen-awesome-css_2docs_2customization.html#autotoc_md1", [
+        [ "Setup", "md_doxygen-awesome-css_2docs_2customization.html#autotoc_md2", null ],
+        [ "Available variables", "md_doxygen-awesome-css_2docs_2customization.html#autotoc_md3", null ]
+      ] ],
+      [ "Doxygen generator", "md_doxygen-awesome-css_2docs_2customization.html#autotoc_md4", null ],
+      [ "Share your customizations", "md_doxygen-awesome-css_2docs_2customization.html#autotoc_md5", null ]
+    ] ],
+    [ "Extensions", "md_doxygen-awesome-css_2docs_2extensions.html", [
+      [ "Dark Mode Toggle", "md_doxygen-awesome-css_2docs_2extensions.html#extension-dark-mode-toggle", [
+        [ "Installation", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md7", null ],
+        [ "Customizing", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md8", null ]
+      ] ],
+      [ "Fragment Copy Button", "md_doxygen-awesome-css_2docs_2extensions.html#extension-copy-button", [
+        [ "Installation", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md9", null ],
+        [ "Customizing", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md10", null ]
+      ] ],
+      [ "Paragraph Linking", "md_doxygen-awesome-css_2docs_2extensions.html#extension-para", [
+        [ "Installation", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md11", null ],
+        [ "Customizing", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md12", null ]
+      ] ],
+      [ "Interactive TOC", "md_doxygen-awesome-css_2docs_2extensions.html#extension-toc", [
+        [ "Installation", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md13", null ],
+        [ "Customizing", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md14", null ]
+      ] ],
+      [ "Tabs", "md_doxygen-awesome-css_2docs_2extensions.html#extension-tabs", [
+        [ "Installation", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md15", null ],
+        [ "Usage", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md16", null ]
+      ] ],
+      [ "Page Navigation", "md_doxygen-awesome-css_2docs_2extensions.html#extension-page-navigation", [
+        [ "Installation", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md17", null ],
+        [ "Usage", "md_doxygen-awesome-css_2docs_2extensions.html#autotoc_md18", null ]
+      ] ]
+    ] ],
+    [ "Tips & Tricks", "md_doxygen-awesome-css_2docs_2tricks.html", [
+      [ "Diagrams with Graphviz", "md_doxygen-awesome-css_2docs_2tricks.html#tricks-graphviz", null ],
+      [ "Disable Dark Mode", "md_doxygen-awesome-css_2docs_2tricks.html#tricks-darkmode", null ],
+      [ "Choosing Sidebar Width", "md_doxygen-awesome-css_2docs_2tricks.html#tricks-sidebar", null ],
+      [ "Formatting Tables", "md_doxygen-awesome-css_2docs_2tricks.html#tricks-tables", [
+        [ "Centering", "md_doxygen-awesome-css_2docs_2tricks.html#autotoc_md20", null ],
+        [ "Full Width", "md_doxygen-awesome-css_2docs_2tricks.html#autotoc_md21", null ]
+      ] ]
+    ] ],
+    [ "Doxygen Awesome", "md_doxygen-awesome-css_2README.html", [
+      [ "Motivation", "md_doxygen-awesome-css_2README.html#autotoc_md30", null ],
+      [ "Features", "md_doxygen-awesome-css_2README.html#autotoc_md31", null ],
+      [ "Examples", "md_doxygen-awesome-css_2README.html#autotoc_md32", null ],
+      [ "Installation", "md_doxygen-awesome-css_2README.html#autotoc_md33", [
+        [ "Git submodule", "md_doxygen-awesome-css_2README.html#autotoc_md34", null ],
+        [ "npm/xpm dependency", "md_doxygen-awesome-css_2README.html#autotoc_md35", null ],
+        [ "System-wide", "md_doxygen-awesome-css_2README.html#autotoc_md36", null ],
+        [ "Choosing a layout", "md_doxygen-awesome-css_2README.html#autotoc_md37", null ],
+        [ "Further installation instructions", "md_doxygen-awesome-css_2README.html#autotoc_md38", null ]
+      ] ],
+      [ "Browser support", "md_doxygen-awesome-css_2README.html#autotoc_md39", null ],
+      [ "Credits", "md_doxygen-awesome-css_2README.html#autotoc_md40", null ]
+    ] ],
+    [ "Lista błędów", "bug.html", null ],
+    [ "Lista elementów do wycofania", "deprecated.html", null ],
+    [ "Lista rzeczy do zrobienia", "todo.html", null ],
     [ "Przestrzenie nazw", "namespaces.html", [
       [ "Lista przestrzeni nazw", "namespaces.html", "namespaces_dup" ],
       [ "Składowe przestrzeni nazw", "namespacemembers.html", [
         [ "Wszystko", "namespacemembers.html", null ],
-        [ "Funkcje", "namespacemembers_func.html", null ],
-        [ "Zmienne", "namespacemembers_vars.html", null ]
+        [ "Wyliczenia", "namespacemembers_enum.html", null ],
+        [ "Wartości wyliczeń", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Klasy", "annotated.html", [
       [ "Lista klas", "annotated.html", "annotated_dup" ],
       [ "Indeks klas", "classes.html", null ],
+      [ "Hierarchia klas", "hierarchy.html", "hierarchy" ],
       [ "Składowe klas", "functions.html", [
         [ "Wszystko", "functions.html", null ],
         [ "Funkcje", "functions_func.html", null ]
