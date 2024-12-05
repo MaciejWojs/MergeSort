@@ -95,6 +95,7 @@ jobs:
           echo "DISABLE_INDEX          = NO" >> Doxyfile
           echo "FULL_SIDEBAR           = NO" >> Doxyfile
           echo "HTML_EXTRA_STYLESHEET  = doxygen-awesome.css doxygen-awesome-sidebar-only.css" >> Doxyfile
+          rm -rf doxygen-awesome-css.tar.gz doxygen-awesome-css/
 
       - name: Set Doxygen project version
         run: |
