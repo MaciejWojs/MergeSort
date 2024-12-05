@@ -1,3 +1,10 @@
+/**
+ * @file MergeSort.cpp
+ * @~english
+ * @brief A class implementation of the merge sort algorithm.
+ * @~polish
+ * @brief Implementacja klasy algorytmu sortowania przez scalanie.
+ */
 #include "MergeSort.hpp"
 #include <iostream>
 #include <iomanip>
@@ -37,8 +44,31 @@ void MergeSort::printArray(int* array, int size) {
     std::cout << '\n';
 }
 
-void MergeSort::merge(int* array, int left, int middle, int right) {
+void MergeSort::merge(int* array, int* left, int* right, int size) {
+    int i = 0, j = 0, k = 0;
 
+    while (i < size / 2 && j < size - (size / 2)) {
+        if (left[i] <= right[j]) {
+            array[k] = left[i];
+            i++;
+        } else {
+            array[k] = right[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < size / 2) {
+        array[k] = left[i];
+        i++;
+        k++;
+    }
+
+    while (j < size - (size / 2)) {
+        array[k] = right[j];
+        j++;
+        k++;
+    }
 }
 
 void MergeSort::sort(int* array, int size) {
@@ -58,20 +88,16 @@ void MergeSort::sort(int* array, int size) {
 
     //filing right array
     for (int i = half_size; i < size; i++) {
-        right[half_size - i] = array[i];
+        right[i - half_size] = array[i];
     }
 
 
 
     sort(left, half_size);
     sort(right, size - half_size);
+    merge(array, left, right, size);
 
-    // std::cout << "Left arr: ";
-    // printArray(left, half_size);
-    // std::cout << "Right arr: ";
-    // printArray(right, size - half_size);
 
     delete[] left;
     delete[] right;
-    // sort()
 }
