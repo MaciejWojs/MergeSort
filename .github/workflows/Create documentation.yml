@@ -127,7 +127,7 @@ jobs:
         if: env.IS_TAG == 'true'
         uses: xu-cheng/latex-action@3.2.0
         with:
-          extra_system_packages: "inkscape"
+          extra_system_packages: "inkscape 	texlive-dvi"
           latexmk_shell_escape: true
           working_directory: ${{env.LATEX_DIR}}
           root_file: refman.tex
@@ -151,7 +151,7 @@ jobs:
         if: env.IS_TAG == 'true'
         uses: xu-cheng/latex-action@3.2.0
         with:
-          extra_system_packages: "inkscape"
+          extra_system_packages: "inkscape 	texlive-dvi"
           latexmk_shell_escape: true
           working_directory: ${{env.LATEX_DIR}}
           root_file: refman.tex
