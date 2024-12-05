@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MergeSort: Dokumentacja pliku test/test.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MergeSort<span id="projectnumber">&#160;v0.0.4</span>
+   </div>
+   <div id="projectbrief">Implementacja MergeSort</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('test_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku test.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Testy jednostkowe dla funkcji sortujących tablice za pomocą <a class="el" href="classMergeSort.html" title="Klasa implementująca algorytm sortowania przez scalanie.">MergeSort</a>.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &quot;<a class="el" href="MergeSort_8hpp_source.html">../MergeSort.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MergeSort_8cpp_source.html">../MergeSort.cpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla test.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="test_8cpp__incl.png" border="0" usemap="#atest_2test_8cpp" alt=""/></div>
+<map name="atest_2test_8cpp" id="atest_2test_8cpp">
+<area shape="rect" title="Testy jednostkowe dla funkcji sortujących tablice za pomocą MergeSort." alt="" coords="241,5,335,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,99,105"/>
+<area shape="poly" title=" " alt="" coords="249,34,108,77,106,71,247,29"/>
+<area shape="rect" title=" " alt="" coords="123,79,181,105"/>
+<area shape="poly" title=" " alt="" coords="266,34,190,74,187,69,264,29"/>
+<area shape="rect" title=" " alt="" coords="204,79,278,105"/>
+<area shape="poly" title=" " alt="" coords="283,33,260,67,255,64,278,30"/>
+<area shape="rect" title=" " alt="" coords="302,79,367,105"/>
+<area shape="poly" title=" " alt="" coords="298,30,321,64,316,67,293,33"/>
+<area shape="rect" href="MergeSort_8hpp.html" title="Deklaracja klasy algorytmu sortowania przez scalanie." alt="" coords="340,153,455,178"/>
+<area shape="poly" title=" " alt="" coords="319,29,352,49,381,77,394,107,399,136,394,137,389,108,376,81,348,53,316,34"/>
+<area shape="rect" href="MergeSort_8cpp.html" title="Implementacja klasy algorytmu sortowania przez scalanie." alt="" coords="452,79,567,105"/>
+<area shape="poly" title=" " alt="" coords="326,29,458,71,457,76,325,34"/>
+<area shape="poly" title=" " alt="" coords="492,107,431,146,428,142,489,103"/>
+<area shape="rect" title=" " alt="" coords="479,153,550,178"/>
+<area shape="poly" title=" " alt="" coords="513,105,515,137,510,137,508,105"/>
+<area shape="rect" title=" " alt="" coords="575,153,641,178"/>
+<area shape="poly" title=" " alt="" coords="528,103,581,141,578,146,525,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ad3a70ae54ffce2332fd51aaa31d3032f" id="r_ad3a70ae54ffce2332fd51aaa31d3032f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3a70ae54ffce2332fd51aaa31d3032f">sortArray</a> (std::vector&lt; int &gt; &amp;arr)</td></tr>
+<tr class="memdesc:ad3a70ae54ffce2332fd51aaa31d3032f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sortuje tablicę za pomocą <a class="el" href="classMergeSort.html" title="Klasa implementująca algorytm sortowania przez scalanie.">MergeSort</a>.  <br /></td></tr>
+<tr class="separator:ad3a70ae54ffce2332fd51aaa31d3032f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1399840939b3471ff38f1ca1d983c4" id="r_a9a1399840939b3471ff38f1ca1d983c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a1399840939b3471ff38f1ca1d983c4">printArray</a> (std::vector&lt; int &gt; &amp;arr)</td></tr>
+<tr class="memdesc:a9a1399840939b3471ff38f1ca1d983c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje elementy tablicy.  <br /></td></tr>
+<tr class="separator:a9a1399840939b3471ff38f1ca1d983c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15cfe0f5a9b3e14829e23407d43a612" id="r_af15cfe0f5a9b3e14829e23407d43a612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15cfe0f5a9b3e14829e23407d43a612">TEST</a> (SortArrayTest, AlreadySortedArray)</td></tr>
+<tr class="memdesc:af15cfe0f5a9b3e14829e23407d43a612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca zachowuje tablicę niezmienioną, gdy ona jest już posortowana rosnąco.  <br /></td></tr>
+<tr class="separator:af15cfe0f5a9b3e14829e23407d43a612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730726adbae4f8f9fb7e29e1d95bb68f" id="r_a730726adbae4f8f9fb7e29e1d95bb68f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a730726adbae4f8f9fb7e29e1d95bb68f">TEST</a> (SortArrayTest, ReverseSortedArray)</td></tr>
+<tr class="memdesc:a730726adbae4f8f9fb7e29e1d95bb68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z elementami w odwrotnej kolejności.  <br /></td></tr>
+<tr class="separator:a730726adbae4f8f9fb7e29e1d95bb68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedec423c77e8cde23e569bf6aa2e52a6" id="r_aedec423c77e8cde23e569bf6aa2e52a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedec423c77e8cde23e569bf6aa2e52a6">TEST</a> (SortArrayTest, RandomArray)</td></tr>
+<tr class="memdesc:aedec423c77e8cde23e569bf6aa2e52a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z losowymi elementami.  <br /></td></tr>
+<tr class="separator:aedec423c77e8cde23e569bf6aa2e52a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43a59b7ae6c8ad768ddba657fcecfff" id="r_ae43a59b7ae6c8ad768ddba657fcecfff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae43a59b7ae6c8ad768ddba657fcecfff">TEST</a> (SortArrayTest, NegativeArray)</td></tr>
+<tr class="memdesc:ae43a59b7ae6c8ad768ddba657fcecfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z elementami ujemnymi.  <br /></td></tr>
+<tr class="separator:ae43a59b7ae6c8ad768ddba657fcecfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5539b833ef101da778b7451d19b496b" id="r_ac5539b833ef101da778b7451d19b496b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5539b833ef101da778b7451d19b496b">TEST</a> (SortArrayTest, NegativeAndPositiveArray)</td></tr>
+<tr class="memdesc:ac5539b833ef101da778b7451d19b496b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z elementami ujemnymi i dodatnimi.  <br /></td></tr>
+<tr class="separator:ac5539b833ef101da778b7451d19b496b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcad0d9568ea15835a20b07cb183ffb7" id="r_adcad0d9568ea15835a20b07cb183ffb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcad0d9568ea15835a20b07cb183ffb7">TEST</a> (SortArrayTest, EmptyArray)</td></tr>
+<tr class="memdesc:adcad0d9568ea15835a20b07cb183ffb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje pustą tablicę.  <br /></td></tr>
+<tr class="separator:adcad0d9568ea15835a20b07cb183ffb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b03d33aab6045d2dd88d96802a74bad" id="r_a6b03d33aab6045d2dd88d96802a74bad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b03d33aab6045d2dd88d96802a74bad">TEST</a> (SortArrayTest, SingleElementArray)</td></tr>
+<tr class="memdesc:a6b03d33aab6045d2dd88d96802a74bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z jednym elementem.  <br /></td></tr>
+<tr class="separator:a6b03d33aab6045d2dd88d96802a74bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb6987c6d5ccaa431b44ea85b97e536" id="r_a7cb6987c6d5ccaa431b44ea85b97e536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb6987c6d5ccaa431b44ea85b97e536">TEST</a> (SortArrayTest, RepeatedElementsArray)</td></tr>
+<tr class="memdesc:a7cb6987c6d5ccaa431b44ea85b97e536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z powtarzającymi się elementami.  <br /></td></tr>
+<tr class="separator:a7cb6987c6d5ccaa431b44ea85b97e536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca97e4d139a2c37b7ef6b25185f0744" id="r_a5ca97e4d139a2c37b7ef6b25185f0744"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ca97e4d139a2c37b7ef6b25185f0744">TEST</a> (SortArrayTest, RepeatedElementsArrayNegative)</td></tr>
+<tr class="memdesc:a5ca97e4d139a2c37b7ef6b25185f0744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z powtarzającymi się elementami ujemnymi.  <br /></td></tr>
+<tr class="separator:a5ca97e4d139a2c37b7ef6b25185f0744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5b8e64f7eceabed04b4e373c51eac4" id="r_a0b5b8e64f7eceabed04b4e373c51eac4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b5b8e64f7eceabed04b4e373c51eac4">TEST</a> (SortArrayTest, NegativePositiveAndRepeatedElementsArray)</td></tr>
+<tr class="memdesc:a0b5b8e64f7eceabed04b4e373c51eac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę z liczbami ujemnymi, dodatnimi oraz duplikatami.  <br /></td></tr>
+<tr class="separator:a0b5b8e64f7eceabed04b4e373c51eac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42eceefabf0c0b9d1130a6522feccdf" id="r_ac42eceefabf0c0b9d1130a6522feccdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac42eceefabf0c0b9d1130a6522feccdf">TEST</a> (SortArrayTest, TwoElementsArray)</td></tr>
+<tr class="memdesc:ac42eceefabf0c0b9d1130a6522feccdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje tablicę zawierającą tylko dwa elementy w kolejności rosnącej.  <br /></td></tr>
+<tr class="separator:ac42eceefabf0c0b9d1130a6522feccdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b021871928af3aeb7b420e57f8d68e6" id="r_a1b021871928af3aeb7b420e57f8d68e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b021871928af3aeb7b420e57f8d68e6">TEST</a> (SortArrayTest, LargeArray)</td></tr>
+<tr class="memdesc:a1b021871928af3aeb7b420e57f8d68e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje dużą tablicę zawierającą ponad 100 elementów.  <br /></td></tr>
+<tr class="separator:a1b021871928af3aeb7b420e57f8d68e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c731c94a69a21054854e0ac4e668310" id="r_a0c731c94a69a21054854e0ac4e668310"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c731c94a69a21054854e0ac4e668310">TEST</a> (SortArrayTest, LargeArrayNegativePositiveAndRepeatedElements)</td></tr>
+<tr class="memdesc:a0c731c94a69a21054854e0ac4e668310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testuje, czy funkcja sortująca poprawnie sortuje dużą tablicę zawierającą ponad 100 elementów z liczbami ujemnymi, dodatnimi oraz duplikatami.  <br /></td></tr>
+<tr class="separator:a0c731c94a69a21054854e0ac4e668310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główna funkcja uruchamiająca wszystkie testy.  <br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Testy jednostkowe dla funkcji sortujących tablice za pomocą <a class="el" href="classMergeSort.html" title="Klasa implementująca algorytm sortowania przez scalanie.">MergeSort</a>. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Główna funkcja uruchamiająca wszystkie testy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Liczba argumentów wiersza poleceń. </td></tr>
+    <tr><td class="paramname">argv</td><td>Tablica argumentów wiersza poleceń. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wynik testów. </dd></dl>
+
+</div>
+</div>
+<a id="a9a1399840939b3471ff38f1ca1d983c4" name="a9a1399840939b3471ff38f1ca1d983c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1399840939b3471ff38f1ca1d983c4">&#9670;&#160;</a></span>printArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printArray </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wypisuje elementy tablicy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Tablica do wypisania. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3a70ae54ffce2332fd51aaa31d3032f" name="ad3a70ae54ffce2332fd51aaa31d3032f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a70ae54ffce2332fd51aaa31d3032f">&#9670;&#160;</a></span>sortArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sortArray </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sortuje tablicę za pomocą <a class="el" href="classMergeSort.html" title="Klasa implementująca algorytm sortowania przez scalanie.">MergeSort</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Tablica do posortowania. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af15cfe0f5a9b3e14829e23407d43a612" name="af15cfe0f5a9b3e14829e23407d43a612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15cfe0f5a9b3e14829e23407d43a612">&#9670;&#160;</a></span>TEST() <span class="overload">[1/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AlreadySortedArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca zachowuje tablicę niezmienioną, gdy ona jest już posortowana rosnąco. </p>
+
+</div>
+</div>
+<a id="adcad0d9568ea15835a20b07cb183ffb7" name="adcad0d9568ea15835a20b07cb183ffb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcad0d9568ea15835a20b07cb183ffb7">&#9670;&#160;</a></span>TEST() <span class="overload">[2/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EmptyArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje pustą tablicę. </p>
+
+</div>
+</div>
+<a id="a1b021871928af3aeb7b420e57f8d68e6" name="a1b021871928af3aeb7b420e57f8d68e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b021871928af3aeb7b420e57f8d68e6">&#9670;&#160;</a></span>TEST() <span class="overload">[3/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LargeArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje dużą tablicę zawierającą ponad 100 elementów. </p>
+
+</div>
+</div>
+<a id="a0c731c94a69a21054854e0ac4e668310" name="a0c731c94a69a21054854e0ac4e668310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c731c94a69a21054854e0ac4e668310">&#9670;&#160;</a></span>TEST() <span class="overload">[4/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LargeArrayNegativePositiveAndRepeatedElements</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje dużą tablicę zawierającą ponad 100 elementów z liczbami ujemnymi, dodatnimi oraz duplikatami. </p>
+
+</div>
+</div>
+<a id="ac5539b833ef101da778b7451d19b496b" name="ac5539b833ef101da778b7451d19b496b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5539b833ef101da778b7451d19b496b">&#9670;&#160;</a></span>TEST() <span class="overload">[5/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NegativeAndPositiveArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z elementami ujemnymi i dodatnimi. </p>
+
+</div>
+</div>
+<a id="ae43a59b7ae6c8ad768ddba657fcecfff" name="ae43a59b7ae6c8ad768ddba657fcecfff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43a59b7ae6c8ad768ddba657fcecfff">&#9670;&#160;</a></span>TEST() <span class="overload">[6/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NegativeArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z elementami ujemnymi. </p>
+
+</div>
+</div>
+<a id="a0b5b8e64f7eceabed04b4e373c51eac4" name="a0b5b8e64f7eceabed04b4e373c51eac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5b8e64f7eceabed04b4e373c51eac4">&#9670;&#160;</a></span>TEST() <span class="overload">[7/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NegativePositiveAndRepeatedElementsArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z liczbami ujemnymi, dodatnimi oraz duplikatami. </p>
+
+</div>
+</div>
+<a id="aedec423c77e8cde23e569bf6aa2e52a6" name="aedec423c77e8cde23e569bf6aa2e52a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedec423c77e8cde23e569bf6aa2e52a6">&#9670;&#160;</a></span>TEST() <span class="overload">[8/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z losowymi elementami. </p>
+
+</div>
+</div>
+<a id="a7cb6987c6d5ccaa431b44ea85b97e536" name="a7cb6987c6d5ccaa431b44ea85b97e536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb6987c6d5ccaa431b44ea85b97e536">&#9670;&#160;</a></span>TEST() <span class="overload">[9/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RepeatedElementsArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z powtarzającymi się elementami. </p>
+
+</div>
+</div>
+<a id="a5ca97e4d139a2c37b7ef6b25185f0744" name="a5ca97e4d139a2c37b7ef6b25185f0744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca97e4d139a2c37b7ef6b25185f0744">&#9670;&#160;</a></span>TEST() <span class="overload">[10/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RepeatedElementsArrayNegative</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z powtarzającymi się elementami ujemnymi. </p>
+
+</div>
+</div>
+<a id="a730726adbae4f8f9fb7e29e1d95bb68f" name="a730726adbae4f8f9fb7e29e1d95bb68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730726adbae4f8f9fb7e29e1d95bb68f">&#9670;&#160;</a></span>TEST() <span class="overload">[11/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReverseSortedArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z elementami w odwrotnej kolejności. </p>
+
+</div>
+</div>
+<a id="a6b03d33aab6045d2dd88d96802a74bad" name="a6b03d33aab6045d2dd88d96802a74bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b03d33aab6045d2dd88d96802a74bad">&#9670;&#160;</a></span>TEST() <span class="overload">[12/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SingleElementArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę z jednym elementem. </p>
+
+</div>
+</div>
+<a id="ac42eceefabf0c0b9d1130a6522feccdf" name="ac42eceefabf0c0b9d1130a6522feccdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42eceefabf0c0b9d1130a6522feccdf">&#9670;&#160;</a></span>TEST() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SortArrayTest</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TwoElementsArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Testuje, czy funkcja sortująca poprawnie sortuje tablicę zawierającą tylko dwa elementy w kolejności rosnącej. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="test_8cpp.html">test.cpp</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
